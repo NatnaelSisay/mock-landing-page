@@ -28,9 +28,10 @@
     const body = document.querySelector( 'body' )
 
     let imageIndex = 0
+    body.style.backgroundImage = `url(${ backgroundImages[0] })`
     setInterval( () => {
-      console.log( 'called' )
-      if ( imageIndex >= backgroundImages.length ) {
+      if ( imageIndex == backgroundImages.length ) {
+        console.log( 'index ', imageIndex )
         imageIndex = 0
       }
       body.style.backgroundImage = `url(${ backgroundImages[imageIndex] })`
