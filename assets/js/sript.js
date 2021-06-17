@@ -31,7 +31,6 @@
     body.style.backgroundImage = `url(${ backgroundImages[0] })`
     setInterval( () => {
       if ( imageIndex == backgroundImages.length ) {
-        console.log( 'index ', imageIndex )
         imageIndex = 0
       }
       body.style.backgroundImage = `url(${ backgroundImages[imageIndex] })`
