@@ -18,11 +18,11 @@
 
     // background images
     const backgroundImages = [
-      './background-2.jpeg',
-      './background-3.jpeg',
-      './background-4.jpeg',
-      './background-5.jpeg',
-      './card-background-1.jpeg'
+      './assets/images/background-2.jpeg',
+      './assets/images/background-3.jpeg',
+      './assets/images/background-4.jpeg',
+      './assets/images/background-5.jpeg',
+      './assets/images/card-background-1.jpeg'
     ]
 
     const body = document.querySelector( 'body' )
@@ -32,7 +32,6 @@
       console.log( 'called' )
       if ( imageIndex >= backgroundImages.length ) {
         imageIndex = 0
-        body.style.backgroundImage = `url(${ backgroundImages[imageIndex] })`
       }
       body.style.backgroundImage = `url(${ backgroundImages[imageIndex] })`
       imageIndex += 1
