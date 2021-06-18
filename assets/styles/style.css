@@ -1,5 +1,4 @@
 .modal-container {
-  visibility: hidden;
   position: absolute;
   overflow: scroll;
   bottom: 0px;
@@ -105,7 +104,7 @@
   transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
-  background-color: #ff4b2b;
+  background-color: #771e0a;
 }
 
 .modal-container .modal-content .overlay-container .overlay {
@@ -124,6 +123,7 @@
 }
 
 .modal-container .modal-content .overlay-container .overlay .overlay-panel {
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,11 +143,11 @@
 }
 
 .modal-container .modal-content .overlay-container .overlay-right {
-  background-color: #ff4b2b;
+  background-color: #771e0a;
 }
 
 .modal-container .modal-content .overlay-container .overlay-left {
-  background-color: #ff4b2b;
+  background-color: #771e0a;
 }
 
 .modal-container h1 {
@@ -174,8 +174,8 @@
 
 .modal-container button {
   border-radius: 20px;
-  border: 1px solid #ff4b2b;
-  background-color: #ff4b2b;
+  border: 1px solid #771e0a;
+  background-color: #771e0a;
   color: white;
   font-size: 14px;
   font-weight: bold;
