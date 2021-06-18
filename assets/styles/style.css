@@ -1,4 +1,5 @@
 .modal-container {
+  visibility: hidden;
   position: absolute;
   overflow: scroll;
   bottom: 0px;
