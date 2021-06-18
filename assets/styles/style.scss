@@ -1,3 +1,4 @@
+html,
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -212,4 +213,27 @@ body {
       margin-right: 0.5rem;
     }
   }
+}
+
+.modal-container {
+  visibility: hidden;
+  position: absolute;
+  top: -20px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 105%;
+  width: 100%;
+
+  z-index: 100;
+
+  background-color: rgba(0, 0, 0, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  visibility: visible;
 }

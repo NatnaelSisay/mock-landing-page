@@ -1,7 +1,18 @@
 ( () => {
+
+  const signupLinkButton = document.querySelector( '#signupLinkButton' )
+  const modalContainer = document.querySelector( '#modalContainer' )
+  signupLinkButton.addEventListener( 'click', () => {
+    console.log( 'clcked' )
+    modalContainer.classList.add( 'active' )
+  } )
+
+  modalContainer.addEventListener( 'click', () => {
+    modalContainer.classList.remove( 'active' )
+  } )
+
   const start = () => {
     const swiper = new Swiper( '.swiper-container', {
-      // Optional parameters
       speed: 600,
       loop: true,
       autoplay: {
@@ -12,7 +23,6 @@
 
     } )
   }
-
   window.addEventListener( 'load', () => {
     start()
 
@@ -39,5 +49,4 @@
 
 
   } )
-
 } )()

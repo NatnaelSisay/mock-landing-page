@@ -1,3 +1,4 @@
+html,
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -238,5 +239,31 @@ body {
 
 .footer .social-media a {
   margin-right: 0.5rem;
+}
+
+.modal-container {
+  visibility: hidden;
+  position: absolute;
+  top: -20px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 105%;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active {
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
