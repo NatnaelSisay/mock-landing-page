@@ -21,7 +21,7 @@
       <li>Shop</li>
       <li>News</li>
       <li>Advertisements</li>
-      <li id="signin_button" class="signin-button">Sign in</li>
+      <li id="signupLinkButton" class="signin-button">Sign in</li>
     </ul>
   </nav>
 
@@ -88,6 +88,69 @@
     </footer>
   </div>
 
+  <div id="modalContainer" class="modal-container">
+    <div>
+      <button class="close-modal" id="closeModal">Close</button>
+      <div class="modal-content">
+
+        <!-- signup container -->
+        <div class="form-container signup-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Sign Up</button>
+          </form>
+        </div>
+
+        <!-- signin container -->
+        <div class="form-container signin-container">
+          <form action="#">
+            <h1>Sign In</h1>
+            <div class="social-options">
+              <a href="#">Facebook</a>
+              <a href="#">Google</a>
+              <a href="#">Twitter</a>
+            </div>
+            <span>or use your emial to sign in</span>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <a href="#">Forgot your password?</a>
+            <button>Sign In</button>
+          </form>
+
+        </div>
+
+        <!-- overlay container -->
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Already have an account?</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signIn">Sign In</button>
+              <div style="width: 250px; margin-top: 50px;">
+                <img src="./assets/images/logo.png" alt="">
+              </div>
+            </div>
+
+            <div class="overlay-panel overlay-right">
+              <h1>Welcome!</h1>
+              <p>
+                No mookoob account yet? sign up here
+              </p>
+              <button class="ghost" id="signUp">Sign Up</button>
+              <div style="width: 250px; margin-top: 50px;">
+                <img src="./assets/images/logo.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="./assets/js/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/sript.js"></script>

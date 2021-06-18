@@ -1,3 +1,6 @@
+@import "./modal.scss";
+
+html,
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -212,4 +215,8 @@ body {
       margin-right: 0.5rem;
     }
   }
+}
+
+.active {
+  visibility: visible;
 }
