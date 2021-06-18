@@ -2,14 +2,29 @@
 
   const signupLinkButton = document.querySelector( '#signupLinkButton' )
   const modalContainer = document.querySelector( '#modalContainer' )
+  const closeModal = document.querySelector( '#closeModal' )
+
+  const signUp = document.querySelector( '#signUp' )
+  const signIn = document.querySelector( '#signIn' )
+
+  signUp.addEventListener( 'click', () => {
+    modalContainer.classList.add( 'right-panel-active' )
+  } )
+
+  signIn.addEventListener( 'click', () => {
+    console.log( 'clicked' )
+    modalContainer.classList.remove( 'right-panel-active' )
+  } )
+
   signupLinkButton.addEventListener( 'click', () => {
     console.log( 'clcked' )
     modalContainer.classList.add( 'active' )
   } )
 
-  modalContainer.addEventListener( 'click', () => {
+  closeModal.addEventListener( 'click', () => {
     modalContainer.classList.remove( 'active' )
   } )
+
 
   const start = () => {
     const swiper = new Swiper( '.swiper-container', {
